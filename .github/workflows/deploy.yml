@@ -51,10 +51,10 @@ jobs:
           timeout: 60s
           command_timeout: 10m
           envs: REPO_URL
-          script: |
+          script: | # cd /home/ubuntu/calorie -> yujin/my-calorie-counter
             set -e
             echo "▶ 배포 시작: $(date)"
-            cd /home/ubuntu/calorie
+            cd /home/yujin/my-calorie-counter
 
             # 첫 배포라 .git이 없으면 자동 초기화
             if [ ! -d .git ]; then

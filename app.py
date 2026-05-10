@@ -165,7 +165,7 @@ def build_ui() -> gr.Interface:
             gr.Label(num_top_classes=TOP_K, label="음식 분류 결과"),
             gr.JSON(label="칼로리 & 영양소 추정"),
         ],
-        title="🍱 Calorie Counter (LangChain LCEL)",
+        title="🍱 Calorie Counter (LangChain LCEL) 테스트",
         description=(
             "음식 사진을 업로드하면 HF Inference API로 음식을 인식하고, "
             "LangChain LCEL 체인이 1인분 기준 칼로리/영양소를 추정합니다. "
